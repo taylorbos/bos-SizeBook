@@ -29,7 +29,7 @@ public class PersonDetailActivity extends AppCompatActivity {
 
     private Person mItem;
     private ArrayList<Person> mValues;
-
+    private SaveAndLoad saveandload = new SaveAndLoad();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,7 +42,7 @@ public class PersonDetailActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Context context = view.getContext();
-                SaveAndLoad saveandload = new SaveAndLoad();
+                //SaveAndLoad saveandload = new SaveAndLoad();
                 mValues = saveandload.loadFromFile(context);
                 mItem = mValues.get(Integer.parseInt(getIntent().getStringExtra(PersonDetailFragment.ARG_ITEM_ID)));
                 Intent intent = new Intent(context, EditPersonActivity.class);
