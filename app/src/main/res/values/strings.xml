@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">bos-SizeBook</string>
+    <string name="title_person_detail">Person Detail</string>
+    <string name="EDIT" />
+</resources>
