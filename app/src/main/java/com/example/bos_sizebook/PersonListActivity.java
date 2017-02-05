@@ -29,7 +29,18 @@ import java.util.List;
  * item details. On tablets, the activity presents the list of items and
  * item details side-by-side using two vertical panes.
  *
- * https://developer.android.com/training/basics/firstapp/starting-activity.html
+ * <p>This activity was adapted from the Master/Detail Flow activity from Android Studio. <br>
+ *     It represents a list of people. It includes a button for adding a person and a count for <br>
+ *         the number of people. The method createPerson initiates a Person and adds the person to <br>
+ *             the end of the person list. The methods in SaveAndLoad are used to obtain and update <br>
+ *                 the person list. If a person is clicked on than the PersonDetailActivity and Fragment <br>
+ *                     classes are called for that person.</p>
+ * @author bos
+ * @see PersonDetailActivity
+ * @see PersonDetailFragment
+ * @see EditPersonActivity
+ * @see Person
+ * @see SaveAndLoad
  */
 public class PersonListActivity extends AppCompatActivity {
 
@@ -39,8 +50,6 @@ public class PersonListActivity extends AppCompatActivity {
      */
     private boolean mTwoPane;
     private ArrayList<Person> mValues;
-    //private int position_number;
-    //private SaveAndLoad saveandload;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,25 +60,16 @@ public class PersonListActivity extends AppCompatActivity {
 
         toolbar.setTitle(getTitle());
 
-        //loadFromFile();
-
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                //      .setAction("Action", null).show();
                 Context context = view.getContext();
-                //Intent intent = new Intent(context, EditPersonActivity.class);
-                //startActivity(intent);
                 SaveAndLoad saveandload = new SaveAndLoad();
                 mValues = saveandload.loadFromFile(context);
-                //String name = nameText.getText().toString();
                 mValues = createPerson("name", mValues.size() ,mValues);
                 saveandload.saveInFile(mValues, context);
-                //Context context = view.getContext();
                 Intent intent = new Intent(context, EditPersonActivity.class);
-                //intent.putExtra(PersonDetailFragment.ARG_ITEM_ID, holder.mItem.getName());
                 int i = mValues.size() - 1;
                 intent.putExtra(EditPersonActivity.ARG_ITEM_ID_EDIT, i);
 
@@ -96,12 +96,9 @@ public class PersonListActivity extends AppCompatActivity {
         super.onStart();
         SaveAndLoad saveandload = new SaveAndLoad();
         mValues = saveandload.loadFromFile(PersonListActivity.this);
-        //(TextView) findViewById(R.id.numberString)
-        //("People: " + Integer.toString(mValues.size()));
         View recyclerView = findViewById(R.id.person_list);
         assert recyclerView != null;
         setupRecyclerView((RecyclerView) recyclerView);
-        //(TextView) recyclerView.findViewById(R.id.numberString).
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
 
         toolbar.setSubtitle("People: " + Integer.toString(mValues.size()));
@@ -112,7 +109,6 @@ public class PersonListActivity extends AppCompatActivity {
     public ArrayList<Person> createPerson(String name, int position, ArrayList<Person> items) {
         Person person = new Person(name, position);
         items.add(person);
-        //ITEM_MAP.put(person.getName(), person);
         return items;
     }
 
@@ -155,11 +151,7 @@ public class PersonListActivity extends AppCompatActivity {
         public void onBindViewHolder(final ViewHolder holder, int position) {
             holder.mItem = mValues.get(position);
             holder.mIdView.setText(mValues.get(position).getName());
-            //position_number = position;
-            //id
             holder.mContentView.setText(createListDetails(mValues.get(position)));
-            //content   mValues.get(position)
-            //"Bust" + Integer.toString(mValues.get(position).getBust()) + "Chest" + Integer.toString(mValues.get(position).getChest())
             holder.mView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -174,8 +166,6 @@ public class PersonListActivity extends AppCompatActivity {
                     } else {
                         Context context = v.getContext();
                         Intent intent = new Intent(context, PersonDetailActivity.class);
-                        //intent.putExtra(PersonDetailFragment.ARG_ITEM_ID, holder.mItem.getName());
-                        //intent.putStringExtra(PersonDetailFragment.ARG_ITEM_ID, final_position);
                         intent.putExtra(PersonDetailFragment.ARG_ITEM_ID, Integer.toString(holder.mItem.getPosition()));
                         context.startActivity(intent);
                     }

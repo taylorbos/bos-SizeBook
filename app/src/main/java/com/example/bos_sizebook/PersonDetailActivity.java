@@ -15,10 +15,15 @@ import android.view.MenuItem;
 import java.util.ArrayList;
 
 /**
- * An activity representing a single Person detail screen. This
- * activity is only used narrow width devices. On tablet-size devices,
- * item details are presented side-by-side with a list of items
- * in a {@link PersonListActivity}.
+ * <p>This activity was adapted from the code generated from the Master/Detail Flow activity <br>
+ *     provided by Android Studio. It represents a Person detail screen. It has two buttons: <br>
+ *         one for going to the edit person activity and one to delete the person from the person list. </p>
+ * <p>The method fixPosition is called when the person is deleted to fix the position attributes <br>
+ *     of the other people. Methods from SaveAndLoad are used to obtain and change the proper person list</p>
+ * @author bos
+ * @see Person
+ * @see SaveAndLoad
+ * @see PersonDetailFragment
  */
 public class PersonDetailActivity extends AppCompatActivity {
 

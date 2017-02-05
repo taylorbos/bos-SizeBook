@@ -13,25 +13,30 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.Date;
 
+/**
+ * <p>EditPersonActivity is the activity that is called when the user wants to add a person <br>
+ *     or edit an existing person. This activity is also passed an extra called ARG_ITEM_ID_EDIT <br>
+ *         which includes the position number of the person that is too be changed. If a person <br>
+ *             is being added then a black person is to be added to the list of people before <br>
+ *                 this activity is called. The methods in SaveAndLoad were used to load and save the person list.</p>
+ * <p>The XML file for this activity consists of a TextView and an EditText for each of the <br>
+ *     attributes of Person. If values exist for these attributes than they are written in <br>
+ *         When the save button is pressed what ever is written in the EditText boxes are set <br>
+ *             in the attributes of the person.</p>
+ * <p>http://stackoverflow.com/questions/4590957/how-to-set-text-in-an-edittext <br>
+ *     This showed how to have the class set the text in an EditText.</p>
+ * @author bos
+ * @see Person
+ * @see SaveAndLoad
+ */
+
 public class EditPersonActivity extends AppCompatActivity {
 
     private ArrayList<Person> mValues;
-    //private static final String FILENAME = "file.sav";
     public static final String ARG_ITEM_ID_EDIT = "item_id";
     private Person mItem;
-    /**
-    private EditText nameText = (EditText) findViewById(R.id.name);
-    private EditText neckText = (EditText) findViewById(R.id.neck);
-    private EditText bustText = (EditText) findViewById(R.id.bust);
-    private EditText chestText = (EditText) findViewById(R.id.chest);
-    private EditText waistText = (EditText) findViewById(R.id.waist);
-    private EditText hipText = (EditText) findViewById(R.id.hip);
-    private EditText inseamText = (EditText) findViewById(R.id.inseam);
-    private EditText commentText = (EditText) findViewById(R.id.comment);
-     */
     private SaveAndLoad saveandload = new SaveAndLoad();
     private int position;
-    //private SaveAndLoad saveandload;
 
 
 
@@ -72,12 +77,10 @@ public class EditPersonActivity extends AppCompatActivity {
 
         commentText.setText(mItem.getComment(), TextView.BufferType.EDITABLE);
 
-        //go back to PersonListActivity and save the Person to GSON
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //String text = something.getText().toString()
 
                 mValues.get(position).setName(nameText.getText().toString());
                 mValues.get(position).setDate(new Date());

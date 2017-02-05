@@ -15,10 +15,16 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
 /**
- * A fragment representing a single Person detail screen.
- * This fragment is either contained in a {@link PersonListActivity}
- * in two-pane mode (on tablets) or a {@link PersonDetailActivity}
- * on handsets.
+ * <p>This fragment is adapted from the code generated from the Master/Detail Flow activity <br>
+ *     provided by Android Studio. It represents a Person detail screen. It gets passed the int <br>
+ *         ARG_ITEM_ID representing the position of the Person. </p>
+ * <p>The method createDetails makes the string to be shown on the screen. It consists of all the <br>
+ *     attributes of the person properly formatted.</p>
+ * <p>//http://javarevisited.blogspot.ca/2011/09/convert-date-to-string-simpledateformat.html <br>
+ *     This website showed how to properly format the date.</p>
+ * @author bos
+ * @see Person
+ * @see SaveAndLoad
  */
 public class PersonDetailFragment extends Fragment {
     /**
@@ -26,7 +32,6 @@ public class PersonDetailFragment extends Fragment {
      * represents.
      */
     public static final String ARG_ITEM_ID = "item_id";
-    //private SaveAndLoad saveandload;
 
     /**
      * The dummy content this fragment is presenting.
@@ -52,7 +57,6 @@ public class PersonDetailFragment extends Fragment {
             // arguments. In a real-world scenario, use a Loader
             // to load content from a content provider.
             mItem = mValues.get(Integer.parseInt(getArguments().getString(ARG_ITEM_ID)));
-            //mItem = DummyContent.ITEM_MAP.get(getArguments().getString(ARG_ITEM_ID));
 
 
             Activity activity = this.getActivity();

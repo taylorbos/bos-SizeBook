@@ -3,22 +3,28 @@ package com.example.bos_sizebook;
 import java.util.Date;
 
 /**
- * Created by Taylor on 2017-02-03.
+ *  <p>This is the Person class which contains its constuctor that takes a name and a position <br>
+ *     and the getters and setters for the Person attributes: </p>
+ * <ul>
+ *     <li>name</li>
+ *     <li>date</li>
+ *     <li>position</li>
+ *     <li>neck</li>
+ *     <li>bust</li>
+ *     <li>chest</li>
+ *     <li>waist</li>
+ *     <li>hip</li>
+ *     <li>inseam</li>
+ *     <li>comment</li>
+ * </ul>
+ * <p>The purpose of this class is to keep track of each of the people and their dimensions.</p>
+ * @author bos
  */
 
 public class Person {
     private String name;
     private Date date;
     private int position;
-
-    public int getPosition() {
-        return position;
-    }
-
-    public void setPosition(int position) {
-        this.position = position;
-    }
-
     private int neck;
     private int bust;
     private int chest;
@@ -54,6 +60,14 @@ public class Person {
 
     public void setDate(Date date) {
         this.date = date;
+    }
+
+    public int getPosition() {
+        return position;
+    }
+
+    public void setPosition(int position) {
+        this.position = position;
     }
 
     public int getNeck() {

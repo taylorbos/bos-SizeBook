@@ -19,7 +19,13 @@ import java.util.ArrayList;
 import static java.lang.Boolean.TRUE;
 
 /**
- * Created by Taylor on 2017-02-03.
+ * <p>Class SaveAndLoad consists of two often used methods. loadFromFile uses gson to read <br>
+ *     from the file "file.sav" to obtain the ArrayList of Persons that is stored there. <br>
+ *         saveInFile uses gson to save an ArrayList in the file while overwriting the file <br>
+ *              so that there are no duplicate lists</p>
+ * <p>//http://stackoverflow.com/questions/11484353/gson-throws-malformedjsonexception <br>
+ *     for dealing with the malformed json exception</p>
+ * @author bos
  */
 
 
@@ -36,7 +42,6 @@ import static java.lang.Boolean.TRUE;
                 FileInputStream fis = context.openFileInput(FILENAME);
                 JsonReader in = new JsonReader(new InputStreamReader(fis));
                 in.setLenient(TRUE);
-                //BufferedReader in = new BufferedReader(Rin);
                 //http://stackoverflow.com/questions/11484353/gson-throws-malformedjsonexception
                 Gson gson = new Gson();
 
@@ -56,8 +61,6 @@ import static java.lang.Boolean.TRUE;
         public void saveInFile(ArrayList<Person> mValues, Context context) {
             try {
                 FileOutputStream fos = context.openFileOutput(FILENAME, 0);
-                //FileOutputStream fos = new FileOutputStream(FILENAME);
-                //BufferedWriter out = new BufferedWriter(new OutputStreamWriter(fos));
                 JsonWriter out = new JsonWriter(new OutputStreamWriter(fos));
                 Gson gson = new Gson();
                 gson.toJson(mValues, new TypeToken<ArrayList<Person>>(){}.getType(), out);
