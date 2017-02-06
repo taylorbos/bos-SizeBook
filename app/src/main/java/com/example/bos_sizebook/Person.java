@@ -1,5 +1,6 @@
 package com.example.bos_sizebook;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
@@ -18,12 +19,14 @@ import java.util.Date;
  *     <li>comment</li>
  * </ul>
  * <p>The purpose of this class is to keep track of each of the people and their dimensions.</p>
+ * <p>//http://javarevisited.blogspot.ca/2011/09/convert-date-to-string-simpledateformat.html <br>
+ *     This website showed how to properly format the date.</p>
  * @author bos
  */
 
 public class Person {
     private String name;
-    private Date date;
+    private String date;
     private int position;
     private int neck;
     private int bust;
@@ -36,7 +39,11 @@ public class Person {
     public Person(String name, int position) {
         this.name = name;
         this.position = position;
-        this.date = new Date();
+        Date d = new Date();
+        SimpleDateFormat dateformatJava = new SimpleDateFormat("yyyy-MM-dd");
+        String date_to_string = dateformatJava.format(d);
+        //http://javarevisited.blogspot.ca/2011/09/convert-date-to-string-simpledateformat.html
+        this.date = date_to_string;
         this.neck = 0;
         this.bust = 0;
         this.chest = 0;
@@ -54,11 +61,11 @@ public class Person {
         this.name = name;
     }
 
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(String date) {
         this.date = date;
     }
 

@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -48,6 +49,7 @@ public class EditPersonActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         final EditText nameText = (EditText) findViewById(R.id.name);
+        final EditText dateText = (EditText) findViewById(R.id.date);
         final EditText neckText = (EditText) findViewById(R.id.neck);
         final EditText bustText = (EditText) findViewById(R.id.bust);
         final EditText chestText = (EditText) findViewById(R.id.chest);
@@ -63,6 +65,9 @@ public class EditPersonActivity extends AppCompatActivity {
 
         nameText.setText(mItem.getName(), TextView.BufferType.EDITABLE);
         //http://stackoverflow.com/questions/4590957/how-to-set-text-in-an-edittext
+
+        dateText.setText(mItem.getDate(), TextView.BufferType.EDITABLE);
+
         neckText.setText(Integer.toString(mItem.getNeck()), TextView.BufferType.EDITABLE);
 
         bustText.setText(Integer.toString(mItem.getBust()), TextView.BufferType.EDITABLE);
@@ -83,7 +88,7 @@ public class EditPersonActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 mValues.get(position).setName(nameText.getText().toString());
-                mValues.get(position).setDate(new Date());
+                mValues.get(position).setDate(dateText.getText().toString());
                 mValues.get(position).setNeck(Integer.parseInt(neckText.getText().toString()));
                 mValues.get(position).setBust(Integer.parseInt(bustText.getText().toString()));
                 mValues.get(position).setChest(Integer.parseInt(chestText.getText().toString()));

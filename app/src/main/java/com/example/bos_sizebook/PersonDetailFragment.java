@@ -20,8 +20,6 @@ import java.util.ArrayList;
  *         ARG_ITEM_ID representing the position of the Person. </p>
  * <p>The method createDetails makes the string to be shown on the screen. It consists of all the <br>
  *     attributes of the person properly formatted.</p>
- * <p>//http://javarevisited.blogspot.ca/2011/09/convert-date-to-string-simpledateformat.html <br>
- *     This website showed how to properly format the date.</p>
  * @author bos
  * @see Person
  * @see SaveAndLoad
@@ -38,6 +36,7 @@ public class PersonDetailFragment extends Fragment {
      */
     private ArrayList<Person> mValues;
     private Person mItem;
+    private SaveAndLoad saveandload = new SaveAndLoad();
 
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
@@ -50,7 +49,6 @@ public class PersonDetailFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        SaveAndLoad saveandload = new SaveAndLoad();
         mValues = saveandload.loadFromFile(getContext());
         if (getArguments().containsKey(ARG_ITEM_ID)) {
             // Load the dummy content specified by the fragment
@@ -84,10 +82,7 @@ public class PersonDetailFragment extends Fragment {
 
     private String createDetails(Person person){
         String details = person.getName();
-        SimpleDateFormat dateformatJava = new SimpleDateFormat("yyyy-MM-dd");
-        String date_to_string = dateformatJava.format(person.getDate());
-        details = details + "\nDate: " + date_to_string;
-        //http://javarevisited.blogspot.ca/2011/09/convert-date-to-string-simpledateformat.html
+        details = details + "\nDate: " + person.getDate();
         if (person.getNeck() != 0){
             details = details + "\nNeck Circumference: " + Integer.toString(person.getNeck()) + " Inches";
         }

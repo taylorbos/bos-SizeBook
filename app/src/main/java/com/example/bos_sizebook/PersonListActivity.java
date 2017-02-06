@@ -50,6 +50,7 @@ public class PersonListActivity extends AppCompatActivity {
      */
     private boolean mTwoPane;
     private ArrayList<Person> mValues;
+    private SaveAndLoad saveandload = new SaveAndLoad();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,7 +66,6 @@ public class PersonListActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Context context = view.getContext();
-                SaveAndLoad saveandload = new SaveAndLoad();
                 mValues = saveandload.loadFromFile(context);
                 mValues = createPerson("name", mValues.size() ,mValues);
                 saveandload.saveInFile(mValues, context);

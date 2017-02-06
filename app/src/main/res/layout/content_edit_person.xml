@@ -15,21 +15,41 @@
 
     <TextView
         android:id="@+id/editPersonName"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Edit Name:"/>
     <EditText
         android:id="@+id/name"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/editPersonName"
         android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse" />
+
+    <TextView
+        android:text="Edit Date: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editPersonDate"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editPersonDate"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"
+        android:id="@+id/date" />
+
     <TextView
         android:id="@+id/editPersonNeck"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/name"
         android:text="Edit Neck (circumference in inches):"/>
+
     <EditText
         android:id="@+id/neck"
         android:layout_width="match_parent"
@@ -111,13 +131,8 @@
     <EditText
         android:id="@+id/comment"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="200dp"
         android:layout_below="@+id/editPersonComment"
         android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_below="@+id/comment"/>
 
 </RelativeLayout>
