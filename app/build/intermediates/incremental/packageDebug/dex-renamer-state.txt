@@ -1,0 +1,7 @@
+#Sun Feb 05 23:48:00 MST 2017
+base.0=C\:\\cygwin64\\home\\Taylor\\coding\\301\\bos-SizeBook\\bos-SizeBook\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_e0bc112904ed3516df776da531781b5c23e9583c
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\cygwin64\\home\\Taylor\\coding\\301\\bos-SizeBook\\bos-SizeBook\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_24b48202a839fa94b7b8badb71db6a1d95028608\\classes.dex
+base.1=C\:\\cygwin64\\home\\Taylor\\coding\\301\\bos-SizeBook\\bos-SizeBook\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_24b48202a839fa94b7b8badb71db6a1d95028608
+file.0=C\:\\cygwin64\\home\\Taylor\\coding\\301\\bos-SizeBook\\bos-SizeBook\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_e0bc112904ed3516df776da531781b5c23e9583c\\classes.dex

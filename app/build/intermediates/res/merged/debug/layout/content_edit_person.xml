@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_edit_person"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.bos_sizebook.EditPersonActivity"
+    tools:showIn="@layout/activity_edit_person">
+
+    <TextView
+        android:id="@+id/editPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Name:"/>
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editPersonName"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse" />
+
+    <TextView
+        android:text="Edit Date: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editPersonDate"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editPersonDate"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"
+        android:id="@+id/date" />
+
+    <TextView
+        android:id="@+id/editPersonNeck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:text="Edit Neck (circumference in inches):"/>
+
+    <EditText
+        android:id="@+id/neck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@+id/editPersonNeck"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse" />
+    <TextView
+        android:id="@+id/editPersonBust"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/neck"
+        android:text="Edit Bust (circumference in inches):"/>
+    <EditText
+        android:id="@+id/bust"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@+id/editPersonBust"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse" />
+    <TextView
+        android:id="@+id/editPersonChest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bust"
+        android:text="Edit Chest (circumference in inches):"/>
+    <EditText
+        android:id="@+id/chest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@+id/editPersonChest"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse" />
+    <TextView
+        android:id="@+id/editPersonWaist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chest"
+        android:text="Edit Waist (circumference in inches):"/>
+    <EditText
+        android:id="@+id/waist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@+id/editPersonWaist"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse" />
+    <TextView
+        android:id="@+id/editPersonHip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/waist"
+        android:text="Edit Hip (circumference in inches):"/>
+    <EditText
+        android:id="@+id/hip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@+id/editPersonHip"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse" />
+    <TextView
+        android:id="@+id/editPersonInseam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hip"
+        android:text="Edit Inseam (length in inches):"/>
+    <EditText
+        android:id="@+id/inseam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@+id/editPersonInseam"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse" />
+    <TextView
+        android:id="@+id/editPersonComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inseam"
+        android:text="Edit Comment:"/>
+    <EditText
+        android:id="@+id/comment"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/editPersonComment"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse" />
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86"
+    api-level="23"
+    density="hdpi"
+    format="8"
+    plugin-version="2.2.3"
+    timestamp="8734202623661"
+    token="4740238805946075241"
+    verifier="FULL_BUILD_REQUESTED" >
+
+    <task
+        name="javac"
+        duration="1015" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="844" />
+    <task
+        name="verifier"
+        duration="971" />
+
+    <artifact
+        location="C:\cygwin64\home\Taylor\coding\301\bos-SizeBook\bos-SizeBook\app\build\outputs\apk\app-debug.apk"
+        type="MAIN" />
+
+    <build
+        timestamp="8734202623661"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="C:\cygwin64\home\Taylor\coding\301\bos-SizeBook\bos-SizeBook\app\build\outputs\apk\app-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>

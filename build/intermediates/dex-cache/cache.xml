@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\cygwin64\home\Taylor\coding\301\bos-SizeBook\bos-SizeBook\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="C:\cygwin64\home\Taylor\coding\301\bos-SizeBook\bos-SizeBook\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.4.0_f2b05cd95e99cb958038abc064cf93eb60c61d02\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\cygwin64\home\Taylor\coding\301\bos-SizeBook\bos-SizeBook\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="C:\cygwin64\home\Taylor\coding\301\bos-SizeBook\bos-SizeBook\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.4.0_28ca918b737ee5d7232b516aa485138528d70185\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\cygwin64\home\Taylor\coding\301\bos-SizeBook\bos-SizeBook\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9d0f61c38b6802d967841f7e785bcb9805355365">
+        <dex dex="C:\cygwin64\home\Taylor\coding\301\bos-SizeBook\bos-SizeBook\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_e0bc112904ed3516df776da531781b5c23e9583c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Taylor\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.8.0\c4ba5371a29ac9b2ad6129b1d39ea38750043eff\gson-2.8.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c4ba5371a29ac9b2ad6129b1d39ea38750043eff">
+        <dex dex="C:\cygwin64\home\Taylor\coding\301\bos-SizeBook\bos-SizeBook\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.8.0_557742a5e22a734ce5b79701775dab3dd6ae0255\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\cygwin64\home\Taylor\coding\301\bos-SizeBook\bos-SizeBook\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="C:\cygwin64\home\Taylor\coding\301\bos-SizeBook\bos-SizeBook\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.4.0_b960692bedc9d0268420998019f75e76e8d33548\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\cygwin64\home\Taylor\coding\301\bos-SizeBook\bos-SizeBook\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="C:\cygwin64\home\Taylor\coding\301\bos-SizeBook\bos-SizeBook\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.4.0_e5757d328f1bbb5458669712a8994945deee7739\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\cygwin64\home\Taylor\coding\301\bos-SizeBook\bos-SizeBook\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="C:\cygwin64\home\Taylor\coding\301\bos-SizeBook\bos-SizeBook\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.4.0_be87413c9f54cd19aac99ee1ca071ea866ac293b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\cygwin64\home\Taylor\coding\301\bos-SizeBook\bos-SizeBook\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7f9b806ea2a41caf332d7324f2496d1130ee1db0">
+        <dex dex="C:\cygwin64\home\Taylor\coding\301\bos-SizeBook\bos-SizeBook\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_24b48202a839fa94b7b8badb71db6a1d95028608\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\cygwin64\home\Taylor\coding\301\bos-SizeBook\bos-SizeBook\app\build\intermediates\exploded-aar\com.android.support\design\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5326d9a850d491714fef8cbfaa9ea3416f0bf0d2">
+        <dex dex="C:\cygwin64\home\Taylor\coding\301\bos-SizeBook\bos-SizeBook\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.4.0_8c895f84ef7af036ab7809d92654b20ba5d04e5f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Taylor\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="C:\cygwin64\home\Taylor\coding\301\bos-SizeBook\bos-SizeBook\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.4.0_118c64b00ab97eef19b8d343eafcbd9ddb6a048b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\cygwin64\home\Taylor\coding\301\bos-SizeBook\bos-SizeBook\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="C:\cygwin64\home\Taylor\coding\301\bos-SizeBook\bos-SizeBook\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.4.0_abdb698b475ae2093822f71a6b75f35e2484e055\classes.dex" />
+    </item>
+
+</items>
